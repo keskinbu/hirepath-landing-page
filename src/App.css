@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(to top right, #4439C3, #ECEBF9);
+}
+
+.text-gradient-custom {
+  background: linear-gradient(to right, #ece8e7, #d5f7de);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ReCAPTCHA'yı gizlemek için */
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+/* Sosyal medya ikonları için stiller */
+.social-icon {
+  width: 28px;
+  height: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.linkedin {
+  background-image: url('/public/linkedin.svg');
+}
+
+.instagram {
+  background-image: url('/public/instagram.svg');
+}
+
+.twitter {
+  background-image: url('/public/twitter.svg');
+}
+
+.facebook {
+  background-image: url('/public/facebook.svg');
+}
+
+@media screen and (max-height: 700px) {
+  .min-h-screen {
+    min-height: 700px;
+  }
+}
